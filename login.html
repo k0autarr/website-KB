@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="decorKB.css">
+    <script src="dekorKB.js"></script>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5668ede670.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- mobile logo -->
+        <div class="link-item">
+            <a href="welcome.html" class="link1">
+                <p class="text-light">
+                    <i class="fa-solid fa-mobile-screen-button"></i>Votre magasin
+                    <strong>D E C O R KB</strong> maintenant
+                </p>
+            </a>
+        </div>
+        <!-- truck logo -->
+        <div class="link-item">
+            <a href="seviceRecyclage.html" class="link1">
+                <p class="text-light">
+                    <i class="fa-solid fa-truck"></i>
+                    Servise de reprise et de recyclage
+                </p>
+            </a>
+        </div>
+        <!-- clock logo -->
+        <div class="link-item">
+            <a href="#" class="link1">
+                <p class="text-light">
+                    <i class="fa-solid fa-clock"></i>Outlet en ligne
+                </p>
+            </a>
+        </div>
+    </div>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+    
+                <!-- Toggler/collapsible Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- logo -->
+                        <li class="nav-item me-2">
+                            <a href="ACCEUIL1.html">
+                                <img src="images/logo-removebg-preview.png" alt=" D E C O R KB img" class="LOGO">
+                            </a>
+                        </li>
+                        <!-- search input -->
+                        <li class="nav-item me-2">
+                            <div class="input-group mb-3 rounded">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary" type="button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Que cherchez-vous " aria-label="Search"
+                                    aria-describedby="basic-addon1" />
+                                <button class="btn btn-outline-secondary" type="button"
+                                    title="Rechercher des produits D E C O R KB en utilisant une photo">
+                                    <i class="fa-solid fa-camera"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-2" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                            <a href="form.html" class="nav-link" style="color: black">
+                                <i class="fa-regular fa-user" style="color: rgb(165, 177, 102)"></i>Hej! Connectez-vous ou inscrivez-vous
+                            </a>
+                            <span id="dropdown" class="dropdown" style="display: none;">
+                                <div class="custom-select-wrapper">
+                                    <select onchange="window.location.href=this.value;">
+                                        <option value="#" selected disabled>Choisir une option</option>
+                                        <option value="login.html">s'inscrire</option>
+                                        <option value="form.html" >se connecter</option>
+                                    </select>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link" style="color: black">
+                                <i class="fa-regular fa-heart" style="color: rgb(165, 177, 102)"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-bag-shopping" style="color: rgb(165, 177, 102)"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Connectez-vous à votre compte</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Mot de passe</label>
+                                <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer -->
+        <footer class="bg-dark text-light py-4">
+            
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="mb-4">Suivez-nous</h5>
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li class="me-3">
+                                <a href="#" class="text-light">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" class="text-light">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" class="text-light">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" class="text-light">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="mb-4">Newsletter</h5>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Votre email"
+                                    aria-label="Votre email" aria-describedby="button-addon2">
+                                <button class="btn btn-primary" type="button" id="button-addon2">
+                                    S'abonner
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <p class="text-center">© 2024 D E C O R KB. Tous droits réservés.</p>
+            
+        </footer>
+    </footer>
+</body>
+</html>
